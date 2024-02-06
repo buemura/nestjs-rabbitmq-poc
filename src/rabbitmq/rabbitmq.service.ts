@@ -19,6 +19,6 @@ export class RabbitMqService implements IMessageBroker {
       routingKey,
       Buffer.from(JSON.stringify(message)),
     );
-    console.log({ exchange, routingKey, message });
+    console.log('[PRODUCER] ::', { exchange, routingKey, message });
   }
 }
